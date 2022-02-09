@@ -1,4 +1,5 @@
 import { GetServerSideProps, NextPage } from "next";
+import { Title } from "../../components/Title";
 import { Post } from "../../models/post";
 
 type PostsPageProps = {
@@ -9,7 +10,7 @@ type PostsPageProps = {
 const PostsPage: NextPage<PostsPageProps> = (props) => {
   return (
     <>
-      <h1 className="text-yellow-500">Posts 5!</h1>
+      <Title>Posts 5!</Title>
       <p>{props.name}</p>
       {
         props.posts.map(post => (
