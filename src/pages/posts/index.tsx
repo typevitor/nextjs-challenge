@@ -9,7 +9,7 @@ type PostsPageProps = {
 const PostsPage: NextPage<PostsPageProps> = (props) => {
   return (
     <>
-      <h1>Posts 5!</h1>
+      <h1 className="text-yellow-500">Posts 5!</h1>
       <p>{props.name}</p>
       {
         props.posts.map(post => (
