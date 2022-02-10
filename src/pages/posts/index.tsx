@@ -14,7 +14,7 @@ const PostsPage: NextPage<PostsPageProps> = (props) => {
       <div className="flex">
         <PostsList posts={props.posts} />
         <div className="h-96 border-2 text-center p-4 mx-5 my-4">
-          <span className="font-bold">Sobre o autor</span>
+          <span className="font-bold dark:text-white">Sobre o autor</span>
         </div>
       </div>
     </>
