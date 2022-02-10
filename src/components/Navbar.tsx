@@ -1,14 +1,16 @@
 import * as React from "react";
 import { toggleTheme } from "../utils/theme";
 import Link from "next/link";
-type Props = {};
+type Props = {
+  title: string;
+};
 export const Navbar = (props: Props) => {
   return (
-    <nav className="px-8 sm:px-4 py-2.5 border-b-2 box-border">
-      <div className="container flex flex-wrap space-x-7 items-center mx-auto">
-        <a href="#" className="dark:text-white flex space-x-2 items-center">
+    <nav className="px-2 sm:px-4 py-2 border-b-2 box-border shadow-sm">
+      <div className="container flex flex-wrap space-x-6 items-center mx-auto">
+        <a href="#" className="dark:text-white flex space-x-1 items-center">
           <i className="fa-solid fa-terminal" />
-          <span className="text-lg font-semibold">{`Vitor's Post`}</span>
+          <span className="text-lg font-semibold">{props.title}</span>
         </a>
         <div className="w-full md:w-auto md:grow flex flex-col md:flex-row md:items-center">
           <ul className="flex flex-col text-sm font-medium md:grow md:flex-row md:space-x-8">

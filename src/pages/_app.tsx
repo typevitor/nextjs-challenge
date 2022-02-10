@@ -5,7 +5,7 @@ import { Navbar } from '../components/Navbar'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <Navbar />
+      <Navbar title={`Vitor's Posts`} />
       <main>
         <Component {...pageProps} />
       </main>
