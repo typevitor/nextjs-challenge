@@ -1,5 +1,5 @@
 import { GetServerSideProps, NextPage } from "next";
-import Post from "../../components/Post";
+import PostsList from "../../components/PostsList";
 import { Title } from "../../components/Title";
 import { Post as PostModel } from "../../models/post";
 
@@ -11,11 +11,7 @@ const PostsPage: NextPage<PostsPageProps> = (props) => {
   return (
     <>
       <Title>List of Posts</Title>
-      {
-        props.posts.map(post => (
-          <Post key={post.id} post={post} />
-        ))
-      }
+      <PostsList posts={props.posts} />
     </>
   );
 }

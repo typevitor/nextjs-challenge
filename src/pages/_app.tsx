@@ -6,7 +6,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Navbar title={`Vitor's Posts`} />
-      <main>
+      <main className='container'>
         <Component {...pageProps} />
       </main>
     </>
