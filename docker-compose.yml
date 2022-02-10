@@ -5,7 +5,7 @@ services:
     build: .
     container_name: nextjs
     # entrypoint: sh -c "npm run build && npm run start" 
-    entrypoint: sh -c "npm run dev" 
+    entrypoint: sh -c "npm install && npm run dev" 
     volumes:
       - .:/usr/src/app
     ports:

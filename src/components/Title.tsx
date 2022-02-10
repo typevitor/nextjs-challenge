@@ -4,6 +4,6 @@ type TitleProps = {
 
 export const Title: React.FunctionComponent<TitleProps> = (props) => {
     return (
-        <h1 className="text-5xl text-yellow-500">{props.children}</h1>
+        <h1 className="text-5xl my-6 text-black text-center">{props.children}</h1>
     )
 }
