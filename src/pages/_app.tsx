@@ -6,9 +6,10 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Navbar title={`Vitor's Posts`} />
-      <main className='container'>
+      <main>
         <Component {...pageProps} />
       </main>
+      <div className="w-full border-t-2 text-center p-2">Footer</div>
     </>
   ) 
 }

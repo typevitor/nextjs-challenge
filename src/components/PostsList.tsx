@@ -10,7 +10,7 @@ const PostsList: React.FunctionComponent<PostTypes> = ({ posts }) => {
     <Post key={post.id} post={post} />
   ));
   return (
-    <div>
+    <div className='mx-2 text-left'>
       {postLists}
     </div>
   )

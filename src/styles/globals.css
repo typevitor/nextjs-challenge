@@ -7,7 +7,7 @@
 @tailwind utilities;
 
 :root {
-    --color-background: #fff;
+    --color-background: #F0FFFF;
     --dark-color-background: #111827;
 }
 

@@ -11,7 +11,12 @@ const PostsPage: NextPage<PostsPageProps> = (props) => {
   return (
     <>
       <Title>List of Posts</Title>
-      <PostsList posts={props.posts} />
+      <div className="flex">
+        <PostsList posts={props.posts} />
+        <div className="h-96 border-2 text-center p-4 mx-5 my-4">
+          Painel de Avisos
+        </div>
+      </div>
     </>
   );
 }
