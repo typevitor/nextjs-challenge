@@ -14,14 +14,14 @@ const PostsPage: NextPage<PostsPageProps> = (props) => {
         props.posts.map(post => (
           <div key={post.id} className="my-5 border-b-2 p-5">
             <div className="flex items-center justify-between">
-              <span className="font-bold text-3xl">{post.title}</span>
+              <span className="font-bold text-3xl dark:text-white">{post.title}</span>
               <span className="text-gray-400 italic font-extralight">{post.created_at}</span>
             </div>
             <div className="mb-4">
               <span className="text-gray-500">by {post.author}, at {post.category}</span>
             </div>
             <div className="m-2 font-sans leading-6" >
-              {post.text}
+              <p className="dark:text-white">{post.text}</p>
             </div>
           </div>
         ))
