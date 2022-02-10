@@ -7,7 +7,7 @@ type Props = {
 export const Navbar = (props: Props) => {
   return (
     <nav className="px-2 sm:px-4 py-2 border-b-2 box-border shadow-sm">
-      <div className="container flex flex-wrap space-x-6 items-center mx-auto">
+      <div className="flex flex-wrap space-x-6 items-center justify-between">
         <a href="#" className="dark:text-white flex space-x-1 items-center">
           <i className="fa-solid fa-terminal" />
           <span className="text-lg font-semibold">{props.title}</span>
